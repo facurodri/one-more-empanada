@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://onemoreempanada.com",
     title: "One More Empanada",
   },
   plugins: [
@@ -16,5 +16,29 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locales`,
+        name: `locale`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`,
+        languages: [`en`, `es`],
+        defaultLanguage: `en`,
+        siteUrl: `https://onemoreempanada.com/`,
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false
+          },
+          keySeparator: ".",
+          nsSeparator: false
+        },
+        pages: []
+      }
+    }
   ],
 };
