@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 function Layout({ children, location }) {
+
     useEffect(() => {
         if (location.hash) {
             const id = location.hash.substring(1);
@@ -14,6 +15,7 @@ function Layout({ children, location }) {
             }, 0);
         }
     })
+
     return (
         <div>
             <h1>Hello, I'm Always Here</h1>
