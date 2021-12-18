@@ -1,6 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function Layout({ children }) {
+function Layout({ children, location }) {
+    useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.substring(1);
+
+            setTimeout(() => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.scrollIntoView();
+                    el.focus();
+                }
+            }, 0);
+        }
+    })
     return (
         <div>
             <h1>Hello, I'm Always Here</h1>
