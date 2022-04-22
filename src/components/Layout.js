@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 
+
 function Layout({ children, location }) {
 
     useEffect(() => {
@@ -18,9 +19,10 @@ function Layout({ children, location }) {
 
     return (
         <div>
-            <h1>Hello, I'm Always Here</h1>
+           
+             <h1>Hello, -</h1>
             {children}
-            <h2>and I am always here</h2>
+            <footer>and I am always here(footer) </footer>
         </div>
     )
 }
