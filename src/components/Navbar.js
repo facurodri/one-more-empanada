@@ -7,9 +7,10 @@ export default function Navbar() {
     <nav>
         <h1>One More</h1>
         <div className='links'>
-        <Link to="/">Home</Link> <br/>
-        <Link to="/about">About</Link><br/> 
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link> 
+        <Link to="../en/menu">Menu</Link>
         </div>
     </nav>
   )

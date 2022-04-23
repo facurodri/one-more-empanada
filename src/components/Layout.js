@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import '../pages/css/global.css';
 
 
 function Layout({ children, location }) {
@@ -21,11 +22,11 @@ function Layout({ children, location }) {
     return (
         <div className="layout">
            <Navbar />
-           <div className="content">
-            {children}
-           </div>
+            <div className="content">
+                {children}
+            </div>
             <footer>
-            <p> Copyright 2022 Una Mas </p>
+                <p> Copyright 2022 Una Mas </p>
             </footer>
         </div>
     )
