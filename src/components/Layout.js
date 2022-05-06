@@ -20,7 +20,7 @@ function Layout({ children, location }) {
     // })
 
     return (
-        <div className="layout">
+        <div className="layout-body">
            <Navbar />
             <div className="content">
                 {children}
