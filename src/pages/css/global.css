@@ -23,7 +23,6 @@
    
     
 }
-
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -60,7 +59,7 @@ p {
 
 /* layout and nav */
 .layout-body {
-  
+    /* max-width: 100rem; */
     background-image: url("../../images/foodTruck.jpg");
     background-size: cover;
     background-position: center top;
@@ -73,28 +72,13 @@ p {
     /* min-width: 26rem; */
     /* min-height: fit-content; */
 }
-/* nav {
 
-}
-nav .links {
-    display: inline-block;
-    text-align: right;
-}
-nav a {
-    display: inline-block;
-    margin-left: 20px;
-    font-weight: 400;
-    padding-bottom: 8px;
-    border-bottom: 3px solid transparent;
-}
-nav a:hover {
-    border: white;
-} */
 footer p {
     text-align: center;
     color: #bbb;
     margin: 40px auto;
-    position: relative;
+    position: sticky bottom;
+    
 }
 h1, h2, h3 {
     line-height: 1;
@@ -103,3 +87,23 @@ h1, h2, h3 {
 }
 
 .bg-light { background-color: #fff;}
+
+
+.product__grid {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+}
+
+.menu__card {
+    border: 3px solid red;
+}
+.menu__img {
+    width: 100%;
+    object-fit: cover;
+}
+.empanada__content {
+    z-index: 10;
+    align-self: flex-end ;
+    margin: .5rem;
+    padding: .5rem;
+}

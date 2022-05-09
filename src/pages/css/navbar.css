@@ -7,17 +7,17 @@
     /* background-color: rgba(37, 64, 110, 0.204);
     opacity: 3; */
 }
-Link > :any-link {
+/* Link > :any-link {
     display: inline-block;
     text-align: right;
     position: relative;
      margin: 15px;
      color: rgb(152, 49, 49);
-}
+} */
 
-.nav-links > .link:hover {
+/* .nav-links > .link:hover {
     color: rgb(152, 49, 49);
-}
+} */
 
 .empa-logo {
     background-image:url(../../images/UnaMasEmpandaLogo.png);

@@ -11,8 +11,8 @@ const IndexPage = ({ location, children }) => {
   return (
     <Layout location={location} children={children} >
       <section>
-        <h2>{t("INDEX.WELCOME")}</h2>
-        
+        <h2>{t("INDEX.WELCOME")}</h2>  
+        <h1>This is the space after the navbar</h1>      
       </section>
     </Layout>
   )
